@@ -1,0 +1,65 @@
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+
+ <xsd:element name='AUTHOR' type='xsd:string'>
+ </xsd:element>
+
+ <xsd:element name='BOOKLIST'>
+  <xsd:complexType>
+   <xsd:sequence>
+    <xsd:element ref='BOOKS'/>
+    <xsd:element ref='CATEGORIES'/>
+   </xsd:sequence>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name='BOOKS'>
+  <xsd:complexType>
+   <xsd:sequence>
+    <xsd:element ref='ITEM' maxOccurs='unbounded'/>
+   </xsd:sequence>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name='CATEGORIES'>
+  <xsd:complexType mixed='true'>
+   <xsd:sequence minOccurs='0' maxOccurs='unbounded'>
+    <xsd:element ref='CATEGORY'/>
+   </xsd:sequence>
+   <xsd:attribute name='DESC' type='xsd:string' use='required'/>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name='CATEGORY'>
+  <xsd:complexType>
+   <xsd:attribute name='CODE' type='xsd:ID' use='required'/>
+   <xsd:attribute name='DESC' type='xsd:NMTOKEN' use='required'/>
+   <xsd:attribute name='NOTE' type='xsd:string' use='optional'/>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name='ITEM'>
+  <xsd:complexType>
+   <xsd:choice minOccurs='0' maxOccurs='unbounded'>
+    <xsd:element ref='AUTHOR'/>
+    <xsd:element ref='PRICE'/>
+    <xsd:element ref='PUBLISHER'/>
+    <xsd:element ref='QUANTITY'/>
+    <xsd:element ref='TITLE'/>
+   </xsd:choice>
+   <xsd:attribute name='CAT' type='xsd:IDREF' use='required'/>
+   <xsd:attribute name='TAX' type='xsd:NMTOKEN' use='optional'/>
+  </xsd:complexType>
+ </xsd:element>
+
+ <xsd:element name='PRICE' type='xsd:decimal'>
+ </xsd:element>
+
+ <xsd:element name='PUBLISHER' type='xsd:string'>
+ </xsd:element>
+
+ <xsd:element name='QUANTITY' type='xsd:string'>
+ </xsd:element>
+
+ <xsd:element name='TITLE' type='xsd:string'>
+ </xsd:element>
+</xsd:schema>

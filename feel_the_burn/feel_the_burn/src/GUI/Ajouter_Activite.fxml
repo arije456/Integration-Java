@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="674.0" prefWidth="968.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Ajouter_ActiviteController">
+    <stylesheets>
+        <URL value="@ajouter_activite.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="696.0" fitWidth="1028.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/Interface_sport.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="411.0" layoutY="40.0" prefHeight="54.0" prefWidth="312.0" text="Ajouter Activité" textFill="#f88909">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="713.0" layoutY="184.0" text="ID" textFill="#23e119">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="add_id_a" layoutX="759.0" layoutY="178.0" />
+      <TextField fx:id="add_nom_a" layoutX="756.0" layoutY="239.0" prefHeight="27.0" prefWidth="149.0" />
+      <TextField fx:id="add_cat" layoutX="755.0" layoutY="273.0" prefHeight="27.0" prefWidth="149.0" />
+      <TextField fx:id="add_type" layoutX="755.0" layoutY="321.0" prefHeight="14.0" prefWidth="149.0" />
+      <TextField fx:id="add_id_e" layoutX="756.0" layoutY="379.0" prefHeight="27.0" prefWidth="149.0" />
+      <Label layoutX="702.0" layoutY="233.0" text="Nom" textFill="#23e119">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="668.0" layoutY="279.0" text="Cat_age" textFill="#23e119">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="693.0" layoutY="328.0" text="Type" textFill="#2ccd08">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="662.0" layoutY="385.0" text="Id_Enfant" textFill="#23e119">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button id="btn_ajoutAct" fx:id="add_act" layoutX="934.0" layoutY="481.0" mnemonicParsing="false" onAction="#add_act" prefHeight="25.0" prefWidth="80.0" text="Ajouter" textFill="#f03807">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="add_annuler" layoutX="830.0" layoutY="481.0" mnemonicParsing="false" onAction="#annuler_act" prefHeight="25.0" prefWidth="80.0" text="Afficher" textFill="#2c0df8">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

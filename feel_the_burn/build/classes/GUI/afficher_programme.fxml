@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="scenePane" prefHeight="597.0" prefWidth="962.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Afficher_programmeController">
+   <children>
+      <ImageView fitHeight="640.0" fitWidth="1033.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/Interface_sport.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table_prog" layoutX="151.0" layoutY="94.0" prefHeight="459.0" prefWidth="416.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="41.66668701171875" text="id" />
+          <TableColumn fx:id="nom_p" prefWidth="62.999969482421875" text="Nom_p" />
+            <TableColumn fx:id="date_r" prefWidth="82.33331298828125" text="Date_r" />
+            <TableColumn fx:id="id_kine" prefWidth="49.0" text="id_kine" />
+            <TableColumn fx:id="descript" prefWidth="120.0" text="Description" />
+            <TableColumn fx:id="id_c" prefWidth="66.0" text="id_c" />
+                     
+
+        </columns>
+      </TableView>
+      <Button fx:id="del_prog" layoutX="606.0" layoutY="247.0" mnemonicParsing="false" onAction="#supp_prog" prefHeight="45.0" prefWidth="53.0" style="-fx-background-color: #f88909;" />
+      <Button fx:id="modifier" cacheHint="QUALITY" layoutX="605.0" layoutY="188.0" onAction="#modifier_programme" prefHeight="45.0" prefWidth="53.0" style="-fx-background-color: #f88909;" />
+      <TextField fx:id="recherche" layoutX="418.0" layoutY="586.0" />
+      <Text fill="#f2eded" fontSmoothingType="LCD" layoutX="343.0" layoutY="603.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rechercher :">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Text>
+      <Label layoutX="34.0" layoutY="590.0" text="Nb d'occ Date:" textFill="#efeeee">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nb_occ" layoutX="131.0" layoutY="586.0" onKeyPressed="#nb_occ" />
+      <TextField fx:id="nb_occ2" layoutX="294.0" layoutY="586.0" onKeyPressed="#nb_occ2" prefHeight="25.0" prefWidth="28.0" />
+      <Label fx:id="time" layoutX="849.0" layoutY="33.0" text="Date" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="611.0" layoutY="308.0" mnemonicParsing="false" onAction="#Excel" prefHeight="45.0" prefWidth="53.0" style="-fx-background-color: #f88909;" />
+      <ImageView fitHeight="29.0" fitWidth="28.0" layoutX="618.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/update.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="58.0" fitWidth="28.0" layoutX="619.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/delete_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="53.0" layoutX="623.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/excel.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="244.0" layoutY="33.0" text="Afficher Programme" textFill="#f88909">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="GOBACK" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#GOBACK_TOACCUEIL" prefHeight="45.0" prefWidth="52.0" style="-fx-background-color: #f88909;" />
+      <Button fx:id="exit" layoutX="612.0" layoutY="370.0" mnemonicParsing="false" onAction="#exit" prefHeight="45.0" prefWidth="52.0" style="-fx-background-color: #f88909;" />
+      <ImageView fitHeight="45.0" fitWidth="29.0" layoutX="624.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/exit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="29.0" layoutX="25.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/Left.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

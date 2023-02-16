@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="scenePane" prefHeight="616.0" prefWidth="945.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Afficher_consultationController">
+    <stylesheets>
+        <URL value="@afficher_consultation.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="654.0" fitWidth="956.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/Interface_sport.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table_cons" layoutX="53.0" layoutY="113.0" onMouseClicked="#liste_consult" prefHeight="457.0" prefWidth="644.0">
+        <columns>
+          <TableColumn fx:id="id_c" prefWidth="42.333343505859375" text=" Id_c" />
+          <TableColumn fx:id="nom" prefWidth="58.0" text="Nom" />
+            <TableColumn fx:id="age" prefWidth="62.333343505859375" text="Age" />
+            <TableColumn fx:id="sexe" prefWidth="52.0" text="Sexe" />
+            <TableColumn fx:id="date" prefWidth="82.33331298828125" text="Date_rdv  " />
+            <TableColumn fx:id="etat" prefWidth="101.33331298828125" text="Etat_physique " />
+            <TableColumn fx:id="categorie" prefWidth="76.66668701171875" text="categorie_c " />
+            <TableColumn fx:id="prenom" prefWidth="76.33331298828125" text="Prenom  " />
+            <TableColumn fx:id="email" prefWidth="85.3333740234375" text=" Email  " />
+        </columns>
+      </TableView>
+      <Button fx:id="del_cons" layoutX="765.0" layoutY="251.0" mnemonicParsing="false" onAction="#supp_cons" prefHeight="45.0" prefWidth="57.0" style="-fx-background-color: #f88909;" />
+      <Button fx:id="modifier" cacheHint="QUALITY" layoutX="760.0" layoutY="204.0" onAction="#modifier_consult" prefHeight="37.0" prefWidth="57.0" style="-fx-background-color: #f88909;" />
+      <Text fill="#f2f2f0" fontSmoothingType="LCD" layoutX="219.0" layoutY="599.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rechercher :">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Text>
+      <Label fx:id="time" layoutX="837.0" layoutY="54.0" text="Date" textFill="#f8f4f4">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="exit" layoutX="757.0" layoutY="429.0" mnemonicParsing="false" onAction="#exit" prefHeight="35.0" prefWidth="64.0" style="-fx-background-color: #f88909;" />
+      <Button fx:id="stat_cons" layoutX="760.0" layoutY="307.0" mnemonicParsing="false" onAction="#stat_consult" prefHeight="45.0" prefWidth="64.0" style="-fx-background-color: #f88909;" />
+      <Button fx:id="Excel" layoutX="757.0" layoutY="371.0" mnemonicParsing="false" onAction="#Excel" prefHeight="37.0" prefWidth="64.0" style="-fx-background-color: #f88909;" />
+      <HBox fx:id="hbox" layoutX="378.0" layoutY="575.0" prefHeight="75.0" prefWidth="233.0">
+         <children>
+            <TextField fx:id="recherche" onKeyPressed="#recherche" />
+         </children></HBox>
+      <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="773.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/update.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="35.0" layoutX="779.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/delete_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="23.0" layoutX="780.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/stat.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="46.0" layoutX="782.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/excel.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="59.0" fitWidth="31.0" layoutX="776.0" layoutY="431.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/exit.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="442.0" layoutY="27.0" text="Afficher Consultation" textFill="#f88909">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="GOBACK" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#GOBACK_TOACCUEIL" prefHeight="37.0" prefWidth="57.0" style="-fx-background-color: #f88909;" />
+      <ImageView fitHeight="75.0" fitWidth="29.0" layoutX="28.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/Left.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

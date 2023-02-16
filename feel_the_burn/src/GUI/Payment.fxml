@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.PaymentController">
+   <children>
+      <Label layoutX="61.0" layoutY="105.0" text="ID:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="209.0" text="Price:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id_pay" layoutX="159.0" layoutY="102.0" onKeyPressed="#keyPressed" />
+      <TextField fx:id="price_pay" layoutX="159.0" layoutY="197.0" />
+      <Button fx:id="pay_now" layoutX="169.0" layoutY="329.0" mnemonicParsing="false" onAction="#payment" text="Pay Now" />
+   </children>
+</AnchorPane>

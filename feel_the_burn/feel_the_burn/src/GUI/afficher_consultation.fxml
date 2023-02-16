@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="scenePane" prefHeight="616.0" prefWidth="945.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Afficher_consultationController">
+    <stylesheets>
+        <URL value="@afficher_consultation.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="654.0" fitWidth="956.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/Interface_sport.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table_cons" layoutX="53.0" layoutY="113.0" onMouseClicked="#liste_consult" prefHeight="457.0" prefWidth="857.0">
+        <columns>
+          <TableColumn fx:id="id_c" prefWidth="75.0" text=" Id_c" />
+          <TableColumn fx:id="nom" prefWidth="75.0" text="Nom" />
+            <TableColumn fx:id="age" prefWidth="75.0" text="Age" />
+            <TableColumn fx:id="sexe" prefWidth="75.0" text="Sexe" />
+            <TableColumn fx:id="date" prefWidth="113.0" text="Date_rdv  " />
+            <TableColumn fx:id="etat" prefWidth="113.0" text="Etat_physique " />
+            <TableColumn fx:id="categorie" prefWidth="113.0" text="categorie_c " />
+            <TableColumn fx:id="prenom" prefWidth="113.0" text="Prenom  " />
+            <TableColumn fx:id="email" prefWidth="113.0" text=" Email  " />
+        </columns>
+      </TableView>
+      <Button fx:id="del_cons" layoutX="190.0" layoutY="36.0" mnemonicParsing="false" onAction="#supp_cons" prefHeight="45.0" prefWidth="105.0" text="Supprimer" />
+      <Button fx:id="modifier" cacheHint="QUALITY" layoutX="335.0" layoutY="35.0" onAction="#modifier_consult" prefHeight="45.0" prefWidth="131.0" text="modifier" />
+      <Text fill="#f2f2f0" fontSmoothingType="LCD" layoutX="482.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rechercher :">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="recherche" layoutX="611.0" layoutY="50.0" />
+      <Label fx:id="time" layoutX="837.0" layoutY="54.0" text="Date" textFill="#f8f4f4">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="exit" layoutX="884.0" layoutY="14.0" mnemonicParsing="false" onAction="#exit" text="exit" />
+      <Button fx:id="stat_cons" layoutX="60.0" layoutY="40.0" mnemonicParsing="false" onAction="#stat_consult" prefHeight="37.0" prefWidth="92.0" text="stat" />
+      <Button fx:id="exportPDF" layoutX="106.0" layoutY="587.0" mnemonicParsing="false" onAction="#exportPDF" text="PDF" />
+   </children>
+</AnchorPane>

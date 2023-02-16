@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="724.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Afficher_CoachingController">
+   <children>
+      <ImageView fitHeight="755.0" fitWidth="1086.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/Interface_sport.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table_Coaching" layoutX="40.0" layoutY="202.0" onMouseClicked="#liste_coaching" prefHeight="391.0" prefWidth="503.0">
+        <columns>
+          <TableColumn id="Id_S" fx:id="afficher_Id_S" prefWidth="75.0" text="Id_S" />
+            <TableColumn id="Date_S" fx:id="afficher_Date_S" prefWidth="73.0" text="Date_S" />
+            <TableColumn id="Prix" fx:id="afficher_Prix" prefWidth="75.0" text="Prix" />
+            <TableColumn id="Id_Co" fx:id="afficher_Id_Co" prefWidth="75.0" text="Id_Co" />
+          <TableColumn id="Nom_User" fx:id="afficher_Nom_User" prefWidth="97.0" text="Nom_User" />
+            <TableColumn id="Prenom_User" fx:id="afficher_Prenom_User" prefWidth="106.0" text="Prenom_User" />
+        </columns>
+      </TableView>
+      <Button fx:id="Supprimer" layoutX="662.0" layoutY="337.0" mnemonicParsing="false" onAction="#Supprimer_Seance" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #dd8e0d;" />
+      <Button fx:id="Modifier_Coaching" layoutX="661.0" layoutY="380.0" mnemonicParsing="false" onAction="#Modifier_Coaching" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #dd8e0d;" />
+      <Label layoutX="850.0" layoutY="49.0" text="Afficher Coaching" textFill="#ef9b09">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="645.0" text="Prix_Total :" textFill="#f2eded">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Total" layoutX="114.0" layoutY="641.0" onKeyPressed="#total" prefHeight="25.0" prefWidth="78.0" />
+      <TextField fx:id="Date" layoutX="422.0" layoutY="641.0" onKeyPressed="#Date" prefHeight="25.0" prefWidth="35.0" />
+      <Label layoutX="204.0" layoutY="645.0" text="nom_occ Date :" textFill="#fdf9f9">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nom_occ" layoutX="310.0" layoutY="641.0" onKeyPressed="#nom_occ" prefHeight="25.0" prefWidth="95.0" />
+      <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="666.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/delete_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="666.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/update.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

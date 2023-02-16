@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="scenePane" prefHeight="513.0" prefWidth="673.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Afficher_EnfantController">
+   <children>
+      <ImageView fitHeight="538.0" fitWidth="774.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/Interface_sport.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tab_enf" layoutX="23.0" layoutY="103.0" onMouseClicked="#liste_enf" prefHeight="399.0" prefWidth="552.0">
+        <columns>
+          <TableColumn id="id_enfant" fx:id="aff_ide" prefWidth="75.0" text="Id_Enfant" />
+          <TableColumn id="nom" fx:id="aff_nome" prefWidth="75.0" text="Nom" />
+            <TableColumn id="prenom" fx:id="aff_prenom" prefWidth="75.0" text="Prenom" />
+            <TableColumn id="age" fx:id="aff_age" prefWidth="75.0" text="Age" />
+            <TableColumn id="sexe" fx:id="aff_sexe" prefWidth="75.0" text="Sexe" />
+            <TableColumn id="photo" fx:id="aff_photo" prefWidth="75.0" text="Photo" />
+            <TableColumn id="idu" fx:id="aff_idu" prefWidth="75.0" text="ID_User" />
+        </columns>
+      </TableView>
+      <Button fx:id="del_enf" layoutX="651.0" layoutY="130.0" mnemonicParsing="false" onAction="#supprimer_enfant" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #dd8e0d;" />
+      <Button fx:id="upd_enf" layoutX="651.0" layoutY="179.0" mnemonicParsing="false" onAction="#modifier_enfant" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #dd8e0d;" />
+      <Button fx:id="Excel" layoutX="652.0" layoutY="233.0" mnemonicParsing="false" onAction="#Excel" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #dd8e0d;" />
+      <Button fx:id="GOBACK" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" onAction="#GOBACK_TOACCUEIL" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #dd8e0d;" />
+      <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="659.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/delete_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="660.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/update.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="661.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/excel.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="23.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/Left.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="214.0" layoutY="29.0" text="Afficher Enfant" textFill="#dd8e0d">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="exit" layoutX="708.0" layoutY="454.0" mnemonicParsing="false" onAction="#exit" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #dd8e0d;" />
+      <ImageView fitHeight="25.0" fitWidth="34.0" layoutX="713.0" layoutY="460.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/exit.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

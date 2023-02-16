@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="724.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Afficher_CoachingController">
+   <children>
+      <ImageView fitHeight="755.0" fitWidth="1086.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/Interface_sport.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table_Coaching" layoutX="78.0" layoutY="91.0" onMouseClicked="#liste_coaching" prefHeight="558.0" prefWidth="516.0">
+        <columns>
+          <TableColumn id="Id_S" fx:id="afficher_Id_S" prefWidth="75.0" text="Id_S" />
+            <TableColumn id="Date_S" fx:id="afficher_Date_S" prefWidth="73.0" text="Date_S" />
+            <TableColumn id="Prix" fx:id="afficher_Prix" prefWidth="75.0" text="Prix" />
+            <TableColumn id="Id_Co" fx:id="afficher_Id_Co" prefWidth="75.0" text="Id_Co" />
+          <TableColumn id="Nom_User" fx:id="afficher_Nom_User" prefWidth="97.0" text="Nom_User" />
+            <TableColumn id="Prenom_User" fx:id="afficher_Prenom_User" prefWidth="106.0" text="Prenom_User" />
+        </columns>
+      </TableView>
+      <Button fx:id="Supprimer" layoutX="78.0" layoutY="45.0" mnemonicParsing="false" onAction="#Supprimer_Seance" text="Supprimer" />
+      <Button fx:id="Modifier_Coaching" layoutX="186.0" layoutY="45.0" mnemonicParsing="false" onAction="#Modifier_Coaching" text="Modifier" />
+      <Label layoutX="850.0" layoutY="49.0" text="Afficher Coaching" textFill="#ef9b09">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="670.0" layoutY="299.0" text="Prix_Total" textFill="#f2eded">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Total" layoutX="763.0" layoutY="296.0" />
+      <TextField fx:id="Date" layoutX="763.0" layoutY="358.0" onKeyPressed="#Date" />
+      <Label layoutX="687.0" layoutY="463.0" text="nom_occurence" textFill="#fdf9f9">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nom_occ" layoutX="802.0" layoutY="460.0" onKeyPressed="#nom_occ" />
+   </children>
+</AnchorPane>

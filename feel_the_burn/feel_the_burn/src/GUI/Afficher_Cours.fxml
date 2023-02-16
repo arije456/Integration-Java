@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="scenePane" prefHeight="636.0" prefWidth="918.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Afficher_CoursController">
+   <children>
+      <ImageView fitHeight="675.0" fitWidth="949.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/Interface_sport.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tablecours" layoutX="59.0" layoutY="90.0" prefHeight="498.0" prefWidth="497.0">
+        <columns>
+          <TableColumn fx:id="Afficher_Id_C" prefWidth="75.0" text="Id_C" />
+          <TableColumn fx:id="Afficher_Nom_C" prefWidth="126.99996948242188" text="Nom_C" />
+            <TableColumn fx:id="Afficher_Date_C" prefWidth="146.6666259765625" text="Date_C" />
+            <TableColumn fx:id="Afficher_Id_Co" prefWidth="117.3333740234375" text="Id_Co" />
+        </columns>
+      </TableView>
+      <Button fx:id="Supprimer_Cours" layoutX="59.0" layoutY="49.0" mnemonicParsing="false" onAction="#Supprimer_Cours" text="Supprimer" />
+      <Button fx:id="Modifier_Cours" layoutX="176.0" layoutY="49.0" mnemonicParsing="false" onAction="#Modifier_Cours" text="Modifier" />
+      <Text fill="#f8c10d" layoutX="344.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recherche:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Text>
+      <TextField fx:id="filterfield" layoutX="445.0" layoutY="34.0" onKeyPressed="#filterfield" prefHeight="31.0" prefWidth="298.0" />
+      <Button fx:id="exit" layoutX="725.0" layoutY="550.0" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="61.0" text="Exit" />
+      <Label fx:id="time" layoutX="786.0" layoutY="27.0" prefHeight="31.0" prefWidth="139.0" text="label" textFill="WHITE" />
+      <Button fx:id="exportPDF" layoutX="730.0" layoutY="296.0" mnemonicParsing="false" onAction="#exportPDF" text="PDF" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="462.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Historique_EnfController">
+   <children>
+      <BorderPane layoutX="14.0" layoutY="14.0" prefHeight="441.0" prefWidth="430.0">
+         <center>
+            <TableView fx:id="tabhistorique" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Nom" />
+                <TableColumn prefWidth="75.0" text="Prenom" />
+                  <TableColumn prefWidth="75.0" text="Age" />
+                  <TableColumn prefWidth="75.0" text="Sexe" />
+                  <TableColumn prefWidth="75.0" text="Photo" />
+              </columns>
+            </TableView>
+         </center>
+      </BorderPane>
+      <BorderPane layoutX="444.0" layoutY="14.0" prefHeight="441.0" prefWidth="222.0">
+         <center>
+            <ImageView fx:id="btn_envoyer" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../Assets/history_send_btn.png" />
+               </image>
+            </ImageView>
+         </center>
+         <top>
+            <Pane fx:id="retour" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

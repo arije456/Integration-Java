@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="674.0" prefWidth="1021.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Afficher_BlogController">
+   <children>
+      <ImageView fitHeight="687.0" fitWidth="1083.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/Interface_sport.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table_blog" layoutX="143.0" layoutY="168.0" onMouseClicked="#liste_blog" prefHeight="382.0" prefWidth="712.0">
+        <columns>
+          <TableColumn id="Id_col" fx:id="Id_aff" prefWidth="75.0" text="Id_b" />
+          <TableColumn id="titre_col" fx:id="titre_affich" prefWidth="103.0" text="Titre" />
+            <TableColumn id="auteur_col" fx:id="auteur_aff" prefWidth="111.0" text="Auteur" />
+            <TableColumn id="image_col" fx:id="image_aff" prefWidth="109.0" text="Image" />
+            <TableColumn id="contenu_col" fx:id="contenu_aff" prefWidth="113.6666259765625" text="Contenu" />
+            <TableColumn id="categorie_col" fx:id="categorie_aff" minWidth="0.0" prefWidth="115.3333740234375" text="categorie" />
+            <TableColumn id="date_col" fx:id="date_aff" prefWidth="84.0" text="Date" />
+        </columns>
+      </TableView>
+      <Button fx:id="del_blg" layoutX="887.0" layoutY="456.0" mnemonicParsing="false" onAction="#supprimer_blog" prefHeight="32.0" prefWidth="39.0" style="-fx-background-color: #e48808;" textFill="#eb1010">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="modifier" layoutX="884.0" layoutY="397.0" mnemonicParsing="false" onAction="#modifier_blg" prefHeight="32.0" prefWidth="39.0" style="-fx-background-color: #e48808;" stylesheets="@Ajouter_Blog.css" textFill="#ba330b">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="recherche" layoutX="255.0" layoutY="566.0" onAction="#Recherche" prefHeight="31.0" prefWidth="271.0" />
+      <Label layoutX="303.0" layoutY="43.0" text="Affichage des Blogs" textFill="#e48808fc">
+         <font>
+            <Font name="Arial Black" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="570.0" text="Rechercher">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="click" layoutX="59.0" layoutY="331.0" mnemonicParsing="false" onMouseClicked="#click" text="click" />
+      <Button layoutX="888.0" layoutY="499.0" mnemonicParsing="false" onAction="#Excel" prefHeight="32.0" prefWidth="39.0" style="-fx-background-color: #e48808;" />
+      <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="888.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/update.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="891.0" layoutY="464.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/delete_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="40.0" layoutX="896.0" layoutY="503.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/excel.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Media" layoutX="884.0" layoutY="340.0" mnemonicParsing="false" onAction="#Media_Video" prefHeight="32.0" prefWidth="39.0" style="-fx-background-color: #e48808;">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/media.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="157.0" layoutY="572.0" text="Rechercher :" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

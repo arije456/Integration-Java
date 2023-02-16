@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Update_panierController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/Interface_sport.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="369.0" layoutY="154.0" text="Id_Pa" textFill="#fbf6f6">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="359.0" layoutY="192.0" text="Quantite" textFill="#fffcfc">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="362.0" layoutY="234.0" text="Coupon" textFill="#f4f0f0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="372.0" layoutY="271.0" text="Id_P" textFill="#f2ecec">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="up_id_pa" layoutX="423.0" layoutY="150.0" />
+      <TextField fx:id="up_q" layoutX="423.0" layoutY="188.0" />
+      <TextField fx:id="up_coupon" layoutX="423.0" layoutY="230.0" />
+      <TextField fx:id="up_id_p" layoutX="423.0" layoutY="267.0" />
+      <Button fx:id="up_valider" layoutX="519.0" layoutY="328.0" mnemonicParsing="false" onAction="#up_valider" prefHeight="42.0" prefWidth="56.0" style="-fx-background-color: #f88909;" />
+      <Label layoutX="230.0" layoutY="30.0" text="Modifier Panier" textFill="#f88909">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="81.0" fitWidth="29.0" layoutX="533.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/update.png" />
+         </image></ImageView>
+      <Button fx:id="GOBACK" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#GOBACK_TOACCUEIL" prefHeight="42.0" prefWidth="52.0" style="-fx-background-color: #f88909;" />
+      <ImageView fitHeight="111.0" fitWidth="31.0" layoutX="25.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/Left.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

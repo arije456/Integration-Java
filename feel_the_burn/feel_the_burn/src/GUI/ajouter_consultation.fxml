@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="596.0" prefWidth="879.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Ajouter_consultationController">
+    <stylesheets>
+        <URL value="@ajouter_consultation.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane id="AnchorPane" layoutY="-1.0" prefHeight="596.0" prefWidth="879.0">
+         <children>
+            <ScrollPane layoutX="-14.0" layoutY="-3.0" prefHeight="605.0" prefWidth="893.0">
+               <content>
+                  <Pane prefHeight="658.0" prefWidth="944.0">
+                     <children>
+                        <ImageView fitHeight="657.0" fitWidth="984.0" layoutX="-30.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Assets/Interface_sport.jpg" />
+                           </image>
+                        </ImageView>
+                        <TextField id="add_id" fx:id="add_id" layoutX="591.0" layoutY="71.0" />
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="540.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID :">
+                           <font>
+                              <Font name="System Bold Italic" size="22.0" />
+                           </font>
+                        </Text>
+                        <TextField id="add_nom" fx:id="add_nom" layoutX="591.0" layoutY="121.0" />
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="520.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom :">
+                           <font>
+                              <Font name="System Bold Italic" size="22.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="494.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prenom :">
+                           <font>
+                              <Font name="System Bold Italic" size="22.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="add_prenom" layoutX="591.0" layoutY="173.0" />
+                        <TextField fx:id="add_age" layoutX="583.0" layoutY="268.0" />
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="514.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age :">
+                           <font>
+                              <Font name="System Bold Italic" size="22.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="501.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexe :">
+                           <font>
+                              <Font name="System Bold Italic" size="22.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="add_mail" layoutX="583.0" layoutY="314.0" />
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="514.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mail :">
+                           <font>
+                              <Font name="System Bold Italic" size="22.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="413.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Etat_physique :">
+                           <font>
+                              <Font name="System Bold Italic" size="22.0" />
+                           </font>
+                        </Text>
+                        <TextArea fx:id="add_etat" layoutX="583.0" layoutY="353.0" prefHeight="77.0" prefWidth="192.0" />
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="379.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date rendez vous  :">
+                           <font>
+                              <Font name="System Bold Italic" size="22.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="ajouter" cacheHint="QUALITY" layoutX="202.0" layoutY="525.0" onAction="#ajouter_consult" prefHeight="45.0" prefWidth="131.0" text="Ajouter" />
+                        <Button fx:id="Afficher" layoutX="42.0" layoutY="525.0" mnemonicParsing="false" onAction="#afficher_consult" prefHeight="45.0" prefWidth="131.0" text="Afficher" />
+                        <Text fill="#bf772e" fontSmoothingType="LCD" layoutX="241.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter consultation">
+                           <font>
+                              <Font name="System Bold Italic" size="41.0" />
+                           </font>
+                        </Text>
+                        <TextField id="date" fx:id="add_date" layoutX="586.0" layoutY="451.0" />
+                        <TextField fx:id="add_sexe" layoutX="583.0" layoutY="219.0" />
+                        <TextField id="date" fx:id="add_categorie" layoutX="597.0" layoutY="518.0" />
+                        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="428.0" layoutY="542.0" strokeType="OUTSIDE" strokeWidth="0.0" text="categorie:">
+                           <font>
+                              <Font name="System Bold Italic" size="22.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </content></ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

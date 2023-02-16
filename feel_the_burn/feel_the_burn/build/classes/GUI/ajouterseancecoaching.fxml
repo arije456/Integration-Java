@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="743.0" prefWidth="1184.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AjouterseancecoachingController">
+    <stylesheets>
+        <URL value="@ajouterseancecoaching.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="809.0" prefWidth="1190.0">
+         <children>
+            <ImageView fitHeight="822.0" fitWidth="1263.0" layoutX="1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/Interface_sport.jpg" />
+               </image>
+            </ImageView>
+            <ScrollBar layoutX="-8.0" layoutY="800.0" prefHeight="18.0" prefWidth="1243.0" />
+            <ScrollBar layoutX="1217.0" layoutY="-4.0" orientation="VERTICAL" prefHeight="803.0" prefWidth="18.0" />
+            <TextField fx:id="add_Id_S" layoutX="886.0" layoutY="225.0" prefHeight="31.0" prefWidth="217.0" />
+            <Text fill="WHITE" layoutX="762.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id séance">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font></Text>
+            <Text fill="WHITE" layoutX="786.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font></Text>
+            <Text fill="WHITE" layoutX="762.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id coach">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font></Text>
+            <Text fill="#f8f8f8" layoutX="734.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date séance">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font></Text>
+            <Button fx:id="ajouter_seance" layoutX="1010.0" layoutY="566.0" mnemonicParsing="false" onAction="#ajouter_seance" text="Ajouter" />
+            <Button fx:id="afficher_seance" layoutX="913.0" layoutY="566.0" mnemonicParsing="false" onAction="#afficher_seance" text="Afficher" />
+            <Text fill="WHITE" layoutX="745.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom client">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="734.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prenom client">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="add_Nom_C" layoutX="886.0" layoutY="274.0" prefHeight="31.0" prefWidth="217.0" />
+            <TextField fx:id="add_Prenom_C" layoutX="886.0" layoutY="326.0" prefHeight="31.0" prefWidth="217.0" />
+            <Text fill="#f85353" layoutX="84.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservation d'une seance de coaching">
+               <font>
+                  <Font name="Arial" size="62.0" />
+               </font>
+            </Text>
+            <TextField fx:id="add_Prix" layoutX="881.0" layoutY="437.0" prefHeight="31.0" prefWidth="217.0" />
+            <TextField fx:id="add_Id_C" layoutX="881.0" layoutY="496.0" prefHeight="31.0" prefWidth="217.0" />
+            <TextField fx:id="add_Date_S" layoutX="881.0" layoutY="381.0" prefHeight="31.0" prefWidth="217.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

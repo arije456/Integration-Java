@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="scenePane" prefHeight="597.0" prefWidth="962.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Afficher_programmeController">
+   <children>
+      <ImageView fitHeight="640.0" fitWidth="1033.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/Interface_sport.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table_prog" layoutX="151.0" layoutY="94.0" prefHeight="459.0" prefWidth="574.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="nom_p" prefWidth="104.33331298828125" text="Nom_p" />
+            <TableColumn fx:id="date_r" prefWidth="89.66668701171875" text="Date_r" />
+            <TableColumn fx:id="id_kine" prefWidth="69.6666259765625" text="id_kine" />
+            <TableColumn fx:id="descript" prefWidth="136.0" text="Description" />
+            <TableColumn fx:id="id_c" prefWidth="91.3333740234375" text="id_c" />
+                     
+
+        </columns>
+      </TableView>
+      <Button fx:id="del_prog" layoutX="199.0" layoutY="41.0" mnemonicParsing="false" onAction="#supp_prog" prefHeight="45.0" prefWidth="131.0" text="Supprimer" />
+      <Button fx:id="modifier" cacheHint="QUALITY" layoutX="351.0" layoutY="43.0" onAction="#modifier_programme" prefHeight="45.0" prefWidth="131.0" text="modifier" />
+      <TextField fx:id="recherche" layoutX="625.0" layoutY="48.0" />
+      <Text fill="#f2eded" fontSmoothingType="LCD" layoutX="493.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rechercher :">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="rechercher" cacheHint="QUALITY" layoutX="774.0" layoutY="224.0" onAction="#rechercher_programme" prefHeight="45.0" prefWidth="131.0" text="rechercher" />
+      <Label layoutX="284.0" layoutY="575.0" text="Nb d'occ Date:" textFill="#efeeee">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nb_occ" layoutX="388.0" layoutY="573.0" onKeyPressed="#nb_occ" />
+      <TextField fx:id="nb_occ2" layoutX="551.0" layoutY="573.0" onKeyPressed="#nb_occ2" prefHeight="25.0" prefWidth="28.0" />
+      <Label fx:id="time" layoutX="774.0" layoutY="362.0" text="Date" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

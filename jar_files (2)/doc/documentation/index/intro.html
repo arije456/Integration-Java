@@ -1,0 +1,122 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   
+      <!--index/intro
+		Generated at 2004-10-08T11:13:02.329+01:00-->
+      <title>Saxonica: XSLT and XQuery Processing: Introduction</title>
+      <meta name="coverage" content="Worldwide">
+      <meta name="copyright" content="Copyright Saxonica Ltd">
+      <meta name="title" content="Saxonica: XSLT and XQuery Processing: Introduction">
+      <meta name="robots" content="noindex,nofollow">
+      <link rel="stylesheet" href="../saxondocs.css" type="text/css"><script type="text/javascript" language="JavaScript">
+            function topage(section, page) {
+                parent.frames['menu'].location="../" + section + "_menu.html";
+                parent.frames['content'].location="../" + section + "/" + page + ".html";
+            }
+            function tosubpage(section, page, subpage) {
+                parent.frames['menu'].location="../" + section + "_menu.html";
+                parent.frames['content'].location="../" + section + "/" + page + "/" + subpage + ".html";
+            }
+      </script></head>
+   <body class="main">
+      
+      <h1>Introduction</h1>
+      
+      
+      
+      
+      <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Release 8.1.1 is the latest installment of Saxonica's progressive implementation of the 
+         <a href="http://www.w3.org/TR/xpath20" target="_blank" class="bodylink">XPath 2.0</a>, 
+         <a href="http://www.w3.org/TR/xslt20" target="_blank" class="bodylink">XSLT 2.0</a>, and
+         <a href="http://www.w3.org/TR/xquery" target="_blank" class="bodylink">XQuery 1.0</a> specifications. 
+         This release implements the schema-aware features of these languages, and also includes
+         a free-standing schema processor conforming to 
+         <a href="http://www.w3.org/TR/2004/PER-xmlschema-1-20040318/" target="_blank" class="bodylink">XML Schema 1.0</a></p>
+      
+      
+      <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Saxon 8.1 has been developed in collaboration with 
+         <a href="http://www.stylusstudio.com/" target="_blank" class="bodylink">Stylus Studio</a>. Release 6 of Stylus Studio takes
+         advantage of new features introduced in this Saxon release to support stylesheet and query debugging.
+         Saxonica is pleased to recommend Stylus Studio as a leading XML, XSLT, and XQuery development
+         environment.
+      </p>
+      
+      
+      <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><b>Saxon 8.1 provides new functionality, improved performance, and better diagnostics.
+            The licensing model for Saxon-SA is also more flexible, allowing a range of different feature
+            combinations to be offered at different price levels.</b></p>
+      
+      
+      <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">The product is aligned with the working drafts published up to July 2004,
+         though a few features are not yet implemented, and some changes have been made to implement
+         decisions made by the working groups since those drafts were published.
+      </p>
+      
+      
+      <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Saxon 8.1 is available in two versions. Saxon-B 8.1 is a non-schema-aware
+         processor, and is available as an open-source product, free of charge, from 
+         <a href="http://saxon.sf.net/" target="_blank" class="bodylink">SourceForge</a>. It is designed to conform to the
+         basic conformance level of XSLT 2.0, and the equivalent level of functionality in XQuery 1.0. 
+         Saxon-SA 8.1 is the schema-aware version of the package, and is available as a commercially
+         supported product from <a href="http://www.saxonica.com/" target="_blank" class="bodylink">Saxonica Limited</a>.
+         Licensing options are available to provide XSLT only, XQuery only, or schema validation
+         only, as well as a full license that gives access to all functionality.
+      </p>
+      
+      
+      <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Saxon 8.1.1 is a maintenance release that corrects several bugs found in 8.1.</p>
+      
+      
+      <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">This documentation covers both products, with differences noted where applicable.</p>
+      
+      
+      <div class="boxed" style="border: solid thin; background-color: #B1CCC7; padding: 2px">Please note: this documentation is provided on the 
+         <a xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" href="http://www.saxonica.com/" target="_blank" class="bodylink">Saxonica</a> web site and also in the download file.
+         On occasions the online version may be more up-to-date. The download file also includes full
+         API documentation,: see the doc/api directory.
+      </div>
+      
+      
+      <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><a href="../javadoc/index.html" target="_blank" class="bodylink">JavaDoc API specifications</a> (for the current release only)
+         are also available.
+      </p> 
+      
+      
+      <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">A full change log is provided in <a class="bodylink" href="javascript:topage('changes', 'intro')">changes.html</a></p> 
+      
+      
+      <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Saxon 8.0 has been used for production applications by many users. The code is proving
+         stable and reliable. However, you need to be aware that the specifications are still
+         subject to change, and that new Saxon releases will track the changing specifications
+         with no concessions to backward compatibility.
+      </p>
+      
+      
+      <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">If you are looking for complete stability, 
+         the preferred version for production use remains
+         <a href="http://saxon.sf.net/saxon6.5.3/" target="_blank" class="bodylink">Saxon 6.5.3</a>, which
+         implements XSLT 1.0 and XPath 1.0.
+      </p>
+      
+      
+      <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Saxon 8.1 requires Java JDK 1.4. It is believed to run without problems on JDK 1.5, though
+         it is not possible to compile the source under JDK 1.5 because of incompatibilities in the
+         DOM interfaces.
+      </p>
+      
+      
+      <table width="100%">
+         <tr>
+            <td>
+               <p align="left"><a class="nav" href="intro.html" target="_blank">Expand</a></p>
+            </td>
+            <td>
+               <p align="right"><a class="nav" href="whatis.html">Next</a></p>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>
